@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { format } from 'date-fns';
 
 
-const NewPost = ({}) => {
+const NewPost = () => {
     const history= useNavigate();
     
     const posts = useStoreState((state) => state.posts);

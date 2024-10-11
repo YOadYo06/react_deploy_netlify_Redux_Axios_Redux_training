@@ -3,7 +3,7 @@ import { useParams, Link , useNavigate } from "react-router-dom";
 import { useStoreState, useStoreActions } from 'easy-peasy';
 
 
-const PostPage = ({}) => {
+const PostPage = () => {
     const { id } = useParams();
     const deletePost = useStoreActions((actions)=>actions.deletePost);
     const getPostsById = useStoreState((state) => state.getPostsById);
